@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/openlabs}
+    username: ${DB_USER:openlabs}
+    password: ${DB_PASSWORD:openlabs}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+app:
+  jwt-secret: ${JWT_SECRET:dev-only-secret-change-me-to-a-long-random-string-32b+}
+  jwt-expiration-minutes: 480

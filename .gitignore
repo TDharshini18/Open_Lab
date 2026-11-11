@@ -1,0 +1,20 @@
+# Dependencies and build output
+node_modules/
+frontend/dist/
+frontend/.angular/
+backend/target/
+
+# IDE files
+.idea/
+*.iml
+out/
+.vscode/
+
+# Secrets and local settings
+.env
+*.env.local
+
+# Logs and OS files
+*.log
+Thumbs.db
+.DS_Store
